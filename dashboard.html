@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Member Dashboard - KAZI FOX WEB</title>
+    <link rel="icon" href="batman-6-16.ico" />
+    <link href="css/animate.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div class="container-fluid pl-0 pr-0 bg-img clearfix parallax-window2" data-parallax="scroll" data-image-src="images/banner2.jpg">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container">
+                <a class="navbar-brand mr-auto" href="index.html"><img src="images/logo.png" alt="FoxPro" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ml-auto auth-links">
+                        <!-- Auth links will be injected here by auth.js -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="member-dashboard">
+                <h2 class="text-center mb-4">Member Dashboard</h2>
+                
+                <!-- Quick Stats -->
+                <div class="row mb-4">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">Workout Progress</div>
+                            <div class="card-body">
+                                <h3>85%</h3>
+                                <p>Monthly Goal Completion</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">Active Programs</div>
+                            <div class="card-body">
+                                <h3>3</h3>
+                                <p>Current Training Programs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">Next Session</div>
+                            <div class="card-body">
+                                <h3>Tomorrow</h3>
+                                <p>9:00 AM - Core Training</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Training Programs -->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h4 class="mb-0">My Training Programs</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5>Strength Training</h5>
+                                        <p>Progress: 60%</p>
+                                        <div class="progress mb-3">
+                                            <div class="progress-bar bg-danger" style="width: 60%"></div>
+                                        </div>
+                                        <button class="btn btn-outline-primary btn-sm">Continue</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5>HIIT Cardio</h5>
+                                        <p>Progress: 45%</p>
+                                        <div class="progress mb-3">
+                                            <div class="progress-bar bg-danger" style="width: 45%"></div>
+                                        </div>
+                                        <button class="btn btn-outline-primary btn-sm">Continue</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5>Flexibility</h5>
+                                        <p>Progress: 30%</p>
+                                        <div class="progress mb-3">
+                                            <div class="progress-bar bg-danger" style="width: 30%"></div>
+                                        </div>
+                                        <button class="btn btn-outline-primary btn-sm">Continue</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Upcoming Sessions -->
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="mb-0">Upcoming Sessions</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Time</th>
+                                        <th>Program</th>
+                                        <th>Trainer</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Tomorrow</td>
+                                        <td>9:00 AM</td>
+                                        <td>Core Training</td>
+                                        <td>Jennifer</td>
+                                        <td><button class="btn btn-outline-primary btn-sm">Join</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Apr 12, 2025</td>
+                                        <td>2:00 PM</td>
+                                        <td>HIIT Session</td>
+                                        <td>John</td>
+                                        <td><button class="btn btn-outline-primary btn-sm">Join</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Apr 15, 2025</td>
+                                        <td>11:00 AM</td>
+                                        <td>Strength Training</td>
+                                        <td>Mike</td>
+                                        <td><button class="btn btn-outline-primary btn-sm">Join</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>

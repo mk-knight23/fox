@@ -349,6 +349,229 @@ footer::before {
   left: 0;
 }
 
+/* Login and Signup Forms */
+.login-form,
+.signup-form {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.login-form h2,
+.signup-form h2 {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.login-form .form-control,
+.signup-form .form-control {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-bottom: 2px solid #ff8013;
+    border-radius: 0;
+    color: #fff;
+    margin-bottom: 20px;
+    padding: 12px;
+}
+
+.login-form .form-control:focus,
+.signup-form .form-control:focus {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: none;
+}
+
+.login-form .form-control::placeholder,
+.signup-form .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.login-form .btn,
+.signup-form .btn {
+    background: #ff8013;
+    border: none;
+    padding: 12px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.login-form .btn:hover,
+.signup-form .btn:hover {
+    background: #df6700;
+}
+
+/* Member Dashboard Styles */
+.member-dashboard {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    margin: 100px 0;
+    color: #fff;
+}
+
+.member-dashboard .card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #ff8013;
+    margin-bottom: 20px;
+}
+
+.member-dashboard .card-header {
+    background: #ff8013;
+    color: #fff;
+    font-weight: bold;
+}
+
+.member-dashboard .btn-outline-primary {
+    color: #ff8013;
+    border-color: #ff8013;
+}
+
+.member-dashboard .btn-outline-primary:hover {
+    background: #ff8013;
+    color: #fff;
+}
+
+/* User Profile Menu */
+.user-menu {
+    position: relative;
+}
+
+.user-menu .dropdown-menu {
+    background: rgba(0, 0, 0, 0.9);
+    border: 1px solid #ff8013;
+    margin-top: 10px;
+}
+
+.user-menu .dropdown-item {
+    color: #fff;
+}
+
+.user-menu .dropdown-item:hover {
+    background: #ff8013;
+    color: #fff;
+}
+
+/* Member Benefits Section */
+.member-benefits {
+    background: #1a1a1a;
+    color: #fff;
+}
+
+.member-benefits h2 {
+    color: #ff8013;
+    margin-bottom: 30px;
+}
+
+.benefit-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-10px);
+}
+
+.benefit-card i {
+    color: #ff8013;
+}
+
+.benefit-card h4 {
+    color: #fff;
+    margin: 20px 0;
+}
+
+/* Programs Section */
+.programs-section {
+    background: #2a2a2a;
+    color: #fff;
+}
+
+.programs-section h2 {
+    color: #ff8013;
+    margin-bottom: 30px;
+}
+
+.program-card {
+    background: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.program-card:hover {
+    transform: translateY(-10px);
+}
+
+.program-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.program-content {
+    padding: 20px;
+}
+
+.program-content h4 {
+    color: #ff8013;
+    margin-bottom: 15px;
+}
+
+.program-content p {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.program-content .btn {
+    background: #ff8013;
+    border: none;
+    padding: 8px 25px;
+}
+
+.program-content .btn:hover {
+    background: #df6700;
+}
+
+/* AI Features Section */
+.ai-features {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.ai-feature-card {
+  padding: 2rem;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.ai-feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.ai-feature-card i {
+  margin-bottom: 1.5rem;
+}
+
+.ai-feature-card h4 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.ai-feature-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Add Font Awesome CDN link in head section */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
 @media (max-width: 1199px) {
   .fh5co-content-box .pr-0 img {
     margin-top: -107px;
