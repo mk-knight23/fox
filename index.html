@@ -1,389 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- Required meta tags -->
-  
-  <!-- contri -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>KAZI FOX WEB</title>
-  <link rel="icon" href="batman-6-16.ico" />
-
-  <!-- Bootstrap CSS -->
-  <link href="css/animate.css" rel="stylesheet" />
-  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitForge — AI-Powered Fitness Revolution</title>
+  <meta name="description" content="Transform your fitness journey with AI-powered training, personalized workouts, and expert coaching. Join FitForge today.">
+  <link rel="icon" href="batman-6-16.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <div class="container-fluid pl-0 pr-0 bg-img clearfix parallax-window2" data-parallax="scroll"
-    data-image-src="images/banner2.jpg">
-    <nav class="navbar navbar-expand-md navbar-dark">
-      <div class="container">
-        <!-- Brand -->
-        <a class="navbar-brand mr-auto" href="#"><img src="images/logo.png" alt="FoxPro" /></a>
-
-        <!-- Toggler/collapsibe Button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">FitForge</span>
+      </a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#programs">Programs</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="sun-icon">☀️</span>
+          <span class="moon-icon">🌙</span>
         </button>
+        <a href="#join" class="btn btn-primary">Get Started</a>
+      </div>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
 
-        <!-- Navbar links -->
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav ml-auto auth-links">
-            <!-- Auth links will be injected here by auth.js -->
-          </ul>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">🚀 AI-Powered Training</div>
+        <h1 class="hero-title">Forge Your Best Self</h1>
+        <p class="hero-subtitle">Transform your fitness journey with AI-powered workouts, real-time coaching, and personalized training plans that adapt to your goals.</p>
+        <div class="hero-cta">
+          <a href="#join" class="btn btn-primary btn-lg">Start Free Trial</a>
+          <a href="#features" class="btn btn-secondary btn-lg">Learn More</a>
         </div>
-      </div>
-    </nav>
-    <div class="container">
-      <div class="fh5co-banner-text-box">
-        <div class="quote-box pl-5 pr-5 wow bounceInRight">
-          <h2>Transform Your Life <br /><span>With Expert Training</span></h2>
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-number" data-target="50000">0</div>
+            <div class="stat-label">Active Members</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number" data-target="1000000">0</div>
+            <div class="stat-label">Workouts Completed</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number" data-target="98">0</div>
+            <div class="stat-label">Success Rate %</div>
+          </div>
         </div>
-        <a href="signup.html" class="btn text-uppercase btn-outline-danger btn-lg mr-3 mb-3 wow bounceInUp">
-          Join Now</a>
-        <a href="#programs" class="btn text-uppercase btn-outline-danger btn-lg mb-3 wow bounceInDown">
-          View Programs</a>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- Member Benefits Section -->
-  <div class="container-fluid member-benefits py-5">
+  <!-- Features Section -->
+  <section id="features" class="features">
     <div class="container">
-      <h2 class="text-center wow bounceInDown">Member Benefits</h2>
-      <div class="row mt-5">
-        <div class="col-md-4 wow bounceInLeft">
-          <div class="benefit-card text-center">
-            <i class="fas fa-dumbbell fa-3x mb-3"></i>
-            <h4>Premium Equipment</h4>
-            <p>Access to state-of-the-art fitness equipment and facilities</p>
-          </div>
+      <div class="section-header">
+        <h2 class="section-title">Powerful Features</h2>
+        <p class="section-subtitle">Everything you need to achieve your fitness goals</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card glass">
+          <div class="feature-icon">🤖</div>
+          <h3>AI Personal Trainer</h3>
+          <p>Get personalized workout plans that adapt to your progress and goals in real-time.</p>
         </div>
-        <div class="col-md-4 wow bounceInUp">
-          <div class="benefit-card text-center">
-            <i class="fas fa-user-friends fa-3x mb-3"></i>
-            <h4>Expert Trainers</h4>
-            <p>Personal training sessions with certified fitness experts</p>
-          </div>
+        <div class="feature-card glass">
+          <div class="feature-icon">📊</div>
+          <h3>Progress Analytics</h3>
+          <p>Track your performance with advanced analytics and detailed progress reports.</p>
         </div>
-        <div class="col-md-4 wow bounceInRight">
-          <div class="benefit-card text-center">
-            <i class="fas fa-calendar-alt fa-3x mb-3"></i>
-            <h4>Flexible Schedule</h4>
-            <p>24/7 access with flexible class scheduling</p>
-          </div>
+        <div class="feature-card glass">
+          <div class="feature-icon">🎯</div>
+          <h3>Goal Setting</h3>
+          <p>Set and achieve your fitness goals with smart milestones and reminders.</p>
+        </div>
+        <div class="feature-card glass">
+          <div class="feature-icon">💪</div>
+          <h3>Expert Coaching</h3>
+          <p>Access certified trainers and nutritionists for personalized guidance.</p>
+        </div>
+        <div class="feature-card glass">
+          <div class="feature-icon">📱</div>
+          <h3>Mobile App</h3>
+          <p>Train anywhere with our iOS and Android apps with offline mode.</p>
+        </div>
+        <div class="feature-card glass">
+          <div class="feature-icon">👥</div>
+          <h3>Community</h3>
+          <p>Join a supportive community of fitness enthusiasts and share your journey.</p>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- AI-Powered Features Section -->
-  <div class="container-fluid ai-features py-5 bg-light">
+  <!-- Programs Section -->
+  <section id="programs" class="programs">
     <div class="container">
-      <h2 class="text-center wow bounceInDown">AI-Powered Training</h2>
-      <div class="row mt-5">
-        <div class="col-md-4 wow bounceInLeft">
-          <div class="ai-feature-card text-center">
-            <i class="fas fa-robot fa-3x mb-3 text-primary"></i>
-            <h4>Smart Workout Plans</h4>
-            <p>AI-generated personalized workout plans that adapt to your progress and goals</p>
-          </div>
-        </div>
-        <div class="col-md-4 wow bounceInUp">
-          <div class="ai-feature-card text-center">
-            <i class="fas fa-chart-line fa-3x mb-3 text-success"></i>
-            <h4>Progress Analysis</h4>
-            <p>Advanced AI analytics to track and optimize your fitness journey</p>
-          </div>
-        </div>
-        <div class="col-md-4 wow bounceInRight">
-          <div class="ai-feature-card text-center">
-            <i class="fas fa-mobile-alt fa-3x mb-3 text-info"></i>
-            <h4>Virtual Assistant</h4>
-            <p>24/7 AI coaching and form correction through our mobile app</p>
-          </div>
-        </div>
+      <div class="section-header">
+        <h2 class="section-title">Training Programs</h2>
+        <p class="section-subtitle">Choose the perfect program for your fitness level</p>
       </div>
-    </div>
-  </div>
-
-  <!-- Quick Start Programs -->
-  <div id="programs" class="container-fluid programs-section py-5">
-    <div class="container">
-      <h2 class="text-center wow bounceInDown">Training Programs</h2>
-      <div class="row mt-5">
-        <div class="col-md-4 mb-4 wow bounceInLeft">
-          <div class="program-card">
-            <img src="images/program1.jpg" alt="Strength Training" class="img-fluid">
-            <div class="program-content">
-              <h4>Strength Training</h4>
-              <p>Build muscle and increase strength with our comprehensive program</p>
-              <a href="login.html" class="btn btn-danger">Start Now</a>
-            </div>
+      <div class="programs-grid">
+        <div class="program-card">
+          <div class="program-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+            <div class="program-badge">Beginner</div>
           </div>
-        </div>
-        <div class="col-md-4 mb-4 wow bounceInUp">
-          <div class="program-card">
-            <img src="images/program2.jpg" alt="HIIT Training" class="img-fluid">
-            <div class="program-content">
-              <h4>HIIT Training</h4>
-              <p>High-intensity interval training for maximum fat burn</p>
-              <a href="login.html" class="btn btn-danger">Start Now</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4 wow bounceInRight">
-          <div class="program-card">
-            <img src="images/program3.jpg" alt="Yoga & Flexibility" class="img-fluid">
-            <div class="program-content">
-              <h4>Yoga & Flexibility</h4>
-              <p>Improve flexibility and mindfulness with expert instruction</p>
-              <a href="login.html" class="btn btn-danger">Start Now</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid fh5co-network">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h4 class="wow bounceInUp">FOR NETWORK</h4>
-          <h2 class="wow bounceInRight">MEMBERS</h2>
-          <hr />
-          <h5 class="wow bounceInLeft">NETWORK SUMMER 2017</h5>
-          <p class="wow bounceInDown">
-            The lowdown on Blood Flow Restriction training • FREE CEC/CPD •
-            ​Let's compare ​Raw Vs Cooked • Building Ab, Core &amp; Pelvic
-            strength • Get​ clients short-term wins from long-term goals • So
-            you want to operate multiple clubs? + LOADS MORE
-          </p>
-        </div>
-        <div class="col-md-6">
-          <figure class="wow bounceInDown">
-            <img src="images/about-img.jpg" alt="gym" class="img-fluid" />
-          </figure>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="about-us" class="container-fluid fh5co-about-us pl-0 pr-0 parallax-window" data-parallax="scroll"
-    data-image-src="images/about-us-bg.jpg">
-    <div class="container">
-      <div class="col-sm-6 offset-sm-6">
-        <h2 class="wow bounceInLeft" data-wow-delay=".25s">ABOUT US</h2>
-        <hr />
-        <p class="wow bounceInRight" data-wow-delay=".25s">
-          Trainers, athletes and serious clients alike are looking for the
-          toughest, most brutally productive training techniques to spice up
-          their workouts and provide a truly unique challenge for their body
-          and mind. Think: one-arm push-ups, pistols, pull-ups, handstands,
-          hanging levers and the like! If you want toeither for
-        </p>
-        <a class="btn btn-lg btn-outline-danger d-inline-block text-center mx-auto wow bounceInDown">Learn More</a>
-      </div>
-    </div>
-  </div>
-  <div class="container-fluid fh5co-content-box">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-5 pr-0">
-          <img src="images/rode-gym.jpg" alt="gym" class="img-fluid wow bounceInLeft" />
-        </div>
-        <div class="col-md-7 pl-0">
-          <div class="wow bounceInRight" data-wow-delay=".25s">
-            <div class="card-img-overlay">
-              <p>
-                Great weekend, met lots of cool people and took away quite a
-                bit. Thank you for the experience, and to you and your
-                professional team for making things seem
-              </p>
-            </div>
-            <img src="images/gym-girls.jpg" alt="girls in gym" class="img-fluid" />
-          </div>
-        </div>
-      </div>
-      <div class="row trainers pl-0 pr-0">
-        <div class="col-12 bg-50">
-          <div class="quote-box2 wow bounceInDown" data-wow-delay=".25s">
-            <h2>TRAINERS</h2>
-          </div>
-        </div>
-        <div class="col-md-6 pr-5 pl-5">
-          <div class="card text-center wow bounceInLeft" data-wow-delay=".25s">
-            <img class="card-img-top rounded-circle img-fluid" src="images/trainers1.jpg" alt="Card image" />
-            <div class="card-body mb-5">
-              <h4 class="card-title">JENIFERR</h4>
-              <p class="card-text">
-                Trainers, athletes and serious clients alike are looking for
-                the toughest, most brutally productive training techniques to
-                spice up their workouts and provide a truly unique challenge
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 pl-5 pr-5">
-          <div class="card text-center wow bounceInRight" data-wow-delay=".25s">
-            <img class="card-img-top rounded-circle img-fluid" src="images/trainers2.jpg" alt="Card image" />
-            <div class="card-body mb-5">
-              <h4 class="card-title">JHON</h4>
-              <p class="card-text">
-                Trainers, athletes and serious clients alike are looking for
-                the toughest, most brutally productive training techniques to
-                spice up their workouts and provide a truly unique challenge
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row gallery">
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body mb-4 wow bounceInLeft" data-wow-delay=".25s">
-              <h4 class="card-title">FILEX</h4>
-              <p class="card-text">
-                I just wanted to sincerely thank you for the opportunity to
-                represent Precision Nutrition and the US at such an amazing
-                event.
-              </p>
-            </div>
-            <img class="card-img-top img-fluid wow bounceInRight" data-wow-delay=".25s" src="images/g1.jpg"
-              alt="Card image" />
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img class="card-img-top img-fluid wow bounceInUp" data-wow-delay=".25s" src="images/g2.jpg"
-              alt="Card image" />
-            <div class="card-body mt-4 wow bounceInDown" data-wow-delay=".25s">
-              <h4 class="card-title">IGNITING</h4>
-              <p class="card-text">
-                I just wanted to sincerely thank you for the opportunity to
-                represent Precision Nutrition and the US at such an amazing
-                event.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body mb-4 wow bounceInRight" data-wow-delay=".25s">
-              <h4 class="card-title">PASSION</h4>
-              <p class="card-text">
-                I just wanted to sincerely thank you for the opportunity to
-                represent Precision Nutrition and the US at such an amazing
-                event.
-              </p>
-            </div>
-            <img class="card-img-top img-fluid wow bounceInLeft" data-wow-delay=".25s" src="images/g3.jpg"
-              alt="Card image" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <footer class="container-fluid">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 footer1 d-flex wow bounceInLeft" data-wow-delay=".25s">
-          <div class="d-flex flex-wrap align-content-center">
-            <a href="#"><img src="images/logo.png" alt="logo" /></a>
-            <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo dolor. Ae
-            </p>
-            <p>
-              &copy; 2018 Foxpro. All rights reserved.<br />
-              Design by
-              <a href="https://freehtml5.co" target="_blank">FreeHTML5</a>.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 footer2 wow bounceInUp" data-wow-delay=".25s" id="contact">
-          <div class="form-box">
-            <h4>CONTACT US</h4>
-            <table class="table table-responsive d-table">
-              <tr>
-                <td>
-                  <input type="text" class="form-control pl-0" placeholder="NAME" />
-                </td>
-                <td>
-                  <input type="email" class="form-control pl-0" placeholder="EMAIL" />
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2"></td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <input type="text" class="form-control pl-0" placeholder="ADDRESS" />
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2"></td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <input type="text" class="form-control pl-0" placeholder="MESSAGES" />
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2"></td>
-              </tr>
-              <tr>
-                <td colspan="2" class="text-center pl-0">
-                  <button type="submit" class="btn btn-dark">SEND</button>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </div>
-        <div class="col-md-3 footer3 wow bounceInRight" data-wow-delay=".25s">
-          <h5>ADDRESS</h5>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-          <h5>PHONE</h5>
-          <p>253232323232</p>
-          <h5>EMAIL</h5>
-          <p>email@example.com</p>
-          <div class="social-links">
-            <ul class="nav nav-item">
-              <li>
-                <a href="https://www.facebook.com/fh5co" class="btn btn-secondary mr-1 mb-2"><img
-                    src="images/facebook.png" alt="facebook" /></a>
-              </li>
-              <li>
-                <a href="#" class="btn btn-secondary mr-1 ml-1 mb-2"><img src="images/facebook.png"
-                    alt="facebook" /></a>
-              </li>
-              <li>
-                <a href="#" class="btn btn-secondary mr-1 ml-1 mb-2"><img src="images/facebook.png"
-                    alt="facebook" /></a>
-              </li>
-              <li>
-                <a href="#" class="btn btn-secondary ml-1 mb-2"><img src="images/facebook.png" alt="facebook" /></a>
-              </li>
+          <div class="program-content">
+            <h3>Foundation Builder</h3>
+            <p>Perfect for beginners. Build strength, endurance, and proper form with guided workouts.</p>
+            <ul class="program-features">
+              <li>✓ 12-week program</li>
+              <li>✓ Video tutorials</li>
+              <li>✓ Nutrition guide</li>
             </ul>
+            <a href="#join" class="btn btn-outline">Start Program</a>
           </div>
         </div>
+        <div class="program-card featured">
+          <div class="program-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+            <div class="program-badge">Popular</div>
+          </div>
+          <div class="program-content">
+            <h3>Strength & Power</h3>
+            <p>Build muscle and increase strength with progressive overload training techniques.</p>
+            <ul class="program-features">
+              <li>✓ 16-week program</li>
+              <li>✓ Advanced techniques</li>
+              <li>✓ Meal plans included</li>
+            </ul>
+            <a href="#join" class="btn btn-primary">Start Program</a>
+          </div>
+        </div>
+        <div class="program-card">
+          <div class="program-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+            <div class="program-badge">Advanced</div>
+          </div>
+          <div class="program-content">
+            <h3>Elite Performance</h3>
+            <p>Advanced training for athletes. Push your limits with high-intensity workouts.</p>
+            <ul class="program-features">
+              <li>✓ 20-week program</li>
+              <li>✓ 1-on-1 coaching</li>
+              <li>✓ Custom meal prep</li>
+            </ul>
+            <a href="#join" class="btn btn-outline">Start Program</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Assistant Section -->
+  <section class="ai-assistant">
+    <div class="container">
+      <div class="ai-container glass">
+        <div class="ai-header">
+          <h2>AI Fitness Assistant</h2>
+          <p>Ask anything about workouts, nutrition, or fitness goals</p>
+        </div>
+        <div class="chat-container" id="chatContainer">
+          <div class="chat-message bot">
+            <div class="message-avatar">🤖</div>
+            <div class="message-content">
+              <p>Hi! I'm your AI fitness assistant. Ask me about workout plans, nutrition advice, or fitness tips!</p>
+            </div>
+          </div>
+        </div>
+        <div class="chat-input-container">
+          <input type="text" id="chatInput" placeholder="Ask me anything about fitness..." class="chat-input">
+          <button id="chatSend" class="btn btn-primary">Send</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Simple Pricing</h2>
+        <p class="section-subtitle">Choose the plan that fits your goals</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3>Starter</h3>
+          <div class="price">
+            <span class="currency">$</span>
+            <span class="amount">19</span>
+            <span class="period">/month</span>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Basic workout plans</li>
+            <li>✓ Progress tracking</li>
+            <li>✓ Mobile app access</li>
+            <li>✓ Community support</li>
+          </ul>
+          <a href="#join" class="btn btn-outline">Get Started</a>
+        </div>
+        <div class="pricing-card featured">
+          <div class="popular-badge">Most Popular</div>
+          <h3>Pro</h3>
+          <div class="price">
+            <span class="currency">$</span>
+            <span class="amount">49</span>
+            <span class="period">/month</span>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ AI-powered training</li>
+            <li>✓ Custom meal plans</li>
+            <li>✓ Video coaching</li>
+            <li>✓ Priority support</li>
+            <li>✓ All Starter features</li>
+          </ul>
+          <a href="#join" class="btn btn-primary">Get Started</a>
+        </div>
+        <div class="pricing-card">
+          <h3>Elite</h3>
+          <div class="price">
+            <span class="currency">$</span>
+            <span class="amount">99</span>
+            <span class="period">/month</span>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ 1-on-1 coaching</li>
+            <li>✓ Custom programs</li>
+            <li>✓ Nutrition consulting</li>
+            <li>✓ 24/7 support</li>
+            <li>✓ All Pro features</li>
+          </ul>
+          <a href="#join" class="btn btn-outline">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="faq">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Everything you need to know</p>
+      </div>
+      <div class="faq-container">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How does the AI personal trainer work?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Our AI analyzes your fitness level, goals, and progress to create personalized workout plans that adapt in real-time. It learns from your performance and adjusts difficulty, volume, and exercises accordingly.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can I cancel my subscription anytime?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! You can cancel your subscription at any time with no penalties. Your access will continue until the end of your billing period.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Do I need equipment to get started?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>No! We offer bodyweight programs that require no equipment. However, we also have programs for those with access to gym equipment or home setups.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Is there a mobile app?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! FitForge is available on iOS and Android with full offline mode support, so you can train anywhere, anytime.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="join" class="cta">
+    <div class="container">
+      <div class="cta-content glass">
+        <h2>Ready to Transform Your Life?</h2>
+        <p>Join 50,000+ members who are already achieving their fitness goals with FitForge</p>
+        <div class="cta-buttons">
+          <a href="#" class="btn btn-primary btn-lg">Start Free Trial</a>
+          <a href="#pricing" class="btn btn-secondary btn-lg">View Pricing</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <span class="logo-icon">⚡</span>
+            <span class="logo-text">FitForge</span>
+          </div>
+          <p>Forge Your Best Self with AI-powered fitness training.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="YouTube">📺</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Product</h4>
+          <a href="#features">Features</a>
+          <a href="#programs">Programs</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#">About Us</a>
+          <a href="#">Careers</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 FitForge. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Bootstrap JS, ... -->
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/parallax.js"></script>
-  <script src="js/wow.js"></script>
-  <script src="js/main.js"></script>
+  <script src="script.js"></script>
 </body>
-
 </html>
