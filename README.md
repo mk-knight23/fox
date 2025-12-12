@@ -42,17 +42,26 @@ A modern, feature-rich fitness platform built with pure HTML, CSS, and JavaScrip
 
 ## 🛠️ Tech Stack
 
+- **Bootstrap 5.3.3** — Latest responsive framework
+- **jQuery 3.7.1** — Modern JavaScript library
 - **HTML5** — Semantic markup with accessibility features
 - **CSS3** — Modern features including:
   - CSS Variables for theming
-  - Flexbox & Grid layouts
+  - CSS Container Queries
+  - CSS Scroll Snap
+  - Flexbox & Grid layouts with subgrid support
   - Backdrop filters for glassmorphism
   - Custom animations and transitions
-- **Vanilla JavaScript** — ES6+ features including:
-  - Intersection Observer API
-  - LocalStorage API
-  - Event delegation
-  - Smooth scroll behavior
+  - prefers-color-scheme and prefers-reduced-motion support
+- **Vanilla JavaScript (ES2023)** — Modern features including:
+  - Intersection Observer API v2
+  - matchMedia API for system preferences
+  - requestAnimationFrame for smooth animations
+  - LocalStorage API with fallbacks
+  - Event delegation and passive listeners
+  - Async/await patterns
+  - Web Vitals monitoring (prepared)
+  - Accessibility improvements (ARIA, keyboard navigation)
 
 ## 📁 Project Structure
 
@@ -203,6 +212,37 @@ Contributions are welcome! Feel free to:
 2. Create a feature branch
 3. Make your changes
 4. Submit a pull request
+
+## 🚀 Recent Upgrades (December 2025)
+
+### Major Framework Updates
+- **Bootstrap 5.3.3** — Upgraded from v4.1.3 with latest features and improvements
+- **jQuery 3.7.1** — Updated from v1.12.4 with modern JavaScript compatibility
+
+### Modern CSS Features
+- **CSS Container Queries** — Responsive design based on container size
+- **CSS Scroll Snap** — Smooth horizontal scrolling for feature cards
+- **CSS Subgrid** — Advanced grid layouts with inherited grid lines
+- **Enhanced CSS Variables** — Better theming system with dynamic updates
+
+### JavaScript Modernization
+- **ES2023 Features** — Latest JavaScript syntax and APIs
+- **System Theme Detection** — Automatic dark/light mode based on user preferences
+- **Accessibility Improvements** — Keyboard navigation, ARIA labels, reduced motion support
+- **Performance Optimizations** — Resource preloading, requestAnimationFrame animations
+- **Web Vitals Ready** — Prepared for performance monitoring
+
+### Enhanced User Experience
+- **Improved Theme System** — Better persistence and system preference detection
+- **Mobile Experience** — Enhanced responsive design and touch interactions
+- **Loading Performance** — Optimized resource loading and animation timing
+- **Cross-browser Compatibility** — Latest browser features with fallbacks
+
+### Technical Improvements
+- **Modern Build Practices** — CDN delivery for frameworks
+- **Security Updates** — Latest versions of all dependencies
+- **Code Quality** — Modern JavaScript patterns and best practices
+- **Documentation** — Updated README with new features
 
 ## 📄 License
 

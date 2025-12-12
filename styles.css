@@ -1,3 +1,15 @@
+@container (min-width: 768px) {
+  .hero-content {
+    --hero-padding: 4rem;
+  }
+}
+
+@container (min-width: 1200px) {
+  .features-grid {
+    --grid-columns: 3;
+  }
+}
+
 :root {
   --primary: #6366f1;
   --primary-dark: #4f46e5;
@@ -13,6 +25,9 @@
   --shadow: rgba(0, 0, 0, 0.1);
   --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  --hero-padding: 2rem;
+  --grid-columns: 1;
+  --scroll-behavior: smooth;
 }
 
 [data-theme="dark"] {
@@ -299,6 +314,7 @@ body:not([data-theme]) .moon-icon {
 .features {
   padding: 6rem 0;
   background: var(--bg-secondary);
+  container-type: inline-size;
 }
 
 .section-header {
@@ -321,6 +337,13 @@ body:not([data-theme]) .moon-icon {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+  scroll-padding: 1rem;
+}
+
+.features-grid > * {
+  scroll-snap-align: start;
 }
 
 .feature-card {

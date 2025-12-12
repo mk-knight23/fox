@@ -1,15 +1,41 @@
-// Theme Toggle
+// Modern Theme Toggle with prefers-color-scheme support
 const themeToggle = document.getElementById('themeToggle');
 const html = document.documentElement;
 
-const savedTheme = localStorage.getItem('theme') || 'light';
-html.setAttribute('data-theme', savedTheme);
+// Check for saved theme preference or default to system preference
+const getPreferredTheme = () => {
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme) return savedTheme;
+
+  // Use modern matchMedia API for system preference
+  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+};
+
+const setTheme = (theme) => {
+  html.setAttribute('data-theme', theme);
+  localStorage.setItem('theme', theme);
+
+  // Update meta theme-color for mobile browsers
+  const metaThemeColor = document.querySelector('meta[name="theme-color"]');
+  if (metaThemeColor) {
+    metaThemeColor.setAttribute('content', theme === 'dark' ? '#0f172a' : '#ffffff');
+  }
+};
+
+const savedTheme = getPreferredTheme();
+setTheme(savedTheme);
+
+// Listen for system theme changes
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+  if (!localStorage.getItem('theme')) {
+    setTheme(e.matches ? 'dark' : 'light');
+  }
+});
 
 themeToggle?.addEventListener('click', () => {
   const currentTheme = html.getAttribute('data-theme');
   const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-  html.setAttribute('data-theme', newTheme);
-  localStorage.setItem('theme', newTheme);
+  setTheme(newTheme);
 });
 
 // Mobile Menu Toggle
@@ -202,13 +228,82 @@ document.querySelectorAll('.feature-card, .program-card, .pricing-card').forEach
   });
 });
 
-// Loading Animation
-window.addEventListener('load', () => {
-  document.body.style.opacity = '0';
-  setTimeout(() => {
-    document.body.style.transition = 'opacity 0.5s ease';
-    document.body.style.opacity = '1';
-  }, 100);
+// Performance optimizations
+document.addEventListener('DOMContentLoaded', () => {
+  // Preload critical resources
+  const preloadResources = [
+    'css/bootstrap.min.css',
+    'js/jquery.min.js',
+    'js/bootstrap.bundle.min.js'
+  ];
+
+  preloadResources.forEach(resource => {
+    const link = document.createElement('link');
+    link.rel = 'preload';
+    link.href = resource;
+    link.as = resource.endsWith('.css') ? 'style' : 'script';
+    document.head.appendChild(link);
+  });
 });
 
-console.log('🚀 FitForge loaded successfully!');
+// Loading Animation with improved performance
+window.addEventListener('load', () => {
+  // Use requestAnimationFrame for smoother animations
+  requestAnimationFrame(() => {
+    document.body.style.opacity = '0';
+    requestAnimationFrame(() => {
+      document.body.style.transition = 'opacity 0.5s ease';
+      document.body.style.opacity = '1';
+    });
+  });
+});
+
+// Accessibility improvements
+document.addEventListener('keydown', (e) => {
+  // Close mobile menu with Escape key
+  if (e.key === 'Escape') {
+    const navLinks = document.querySelector('.nav-links');
+    const mobileToggle = document.getElementById('mobileToggle');
+    if (navLinks?.classList.contains('active')) {
+      navLinks.classList.remove('active');
+      mobileToggle?.classList.remove('active');
+    }
+  }
+});
+
+// Add reduced motion support
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+if (prefersReducedMotion) {
+  // Disable animations for users who prefer reduced motion
+  document.documentElement.style.setProperty('--scroll-behavior', 'auto');
+  document.body.style.setProperty('transition', 'none');
+}
+
+// Modern fetch API usage (for future enhancements)
+// const loadFitnessData = async () => {
+//   try {
+//     const response = await fetch('/api/fitness-data');
+//     const data = await response.json();
+//     // Process data
+//   } catch (error) {
+//     console.error('Failed to load fitness data:', error);
+//   }
+// };
+
+// Web Vitals monitoring (for performance tracking)
+// const reportWebVitals = (metric) => {
+//   console.log(metric);
+// };
+
+// if ('web-vitals' in window) {
+//   import('web-vitals').then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {
+//     getCLS(reportWebVitals);
+//     getFID(reportWebVitals);
+//     getFCP(reportWebVitals);
+//     getLCP(reportWebVitals);
+//     getTTFB(reportWebVitals);
+//   });
+// }
+
+console.log('🚀 FitForge loaded successfully with modern features!');
